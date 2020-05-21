@@ -3,27 +3,44 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: black;
-    font-family: Arial;
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
+    color: white;
+
 }
+
 @media (min-width: 400px) {
-    body{
+    body {
         font-size: 14px;
     }
 }
+
 @media (min-width: 600px) {
-    body{
+    body {
         font-size: 16px;
     }
 }
+
+@media (min-width: 800px) {
+    .container {
+        grid-template-columns: 1fr 1px 1fr!important;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
+
 header {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .menu {
     padding: 10px;
     background-color: #212121;
@@ -40,6 +57,7 @@ header {
 .menu li {
     list-style: none;
 }
+
 .menu a {
     display: block;
     padding: 10px;
@@ -55,46 +73,194 @@ a:hover {
     text-decoration: underline;
 }
 
-.site-subtitle,
 .site-title {
-    text-align:center;
-    color: #9c27b0;
+    /*font-family: 'Rock Salt', cursive;*/
+
 }
 
-.site-subtitle{
-    margin-top: 10px;
+.site-subtitle,
+.site-title {
+    text-align: center;
+    color: #9c27b0;
+    font-family: 'Handlee', cursive;
 }
+
+.site-subtitle {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
 .img-portfolio {
     width: 180px;
     height: 180px;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container {
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*align-items: center;*/
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+
 }
-.profile{
+.line{
+    background-color: white;
+}
+.profile-pic{
+    display: grid;
+    justify-content: center;
+}
+.profile {
     width: 200px;
     border: 4px solid #9c27b0;
     border-radius: 100px;
     margin-bottom: 24px;
 }
-section{
+
+section .contact{
     color: #fff;
     display: flex;
     justify-content: center;
+
 }
 
-.about-me {
+.about-me{
+    margin: 24px;
     padding: 20px;
-    width: 50%;
-    text-align: center;
-    border: 4px solid #9c27b0;
-    border-radius: 50px;
+    /*width: 80%;*/
+    text-align: justify;
+    line-height: 3vh;
+    /*border: 4px solid #9c27b0;*/
+    /*border-radius: 50px;*/
+
 
 }
 
-.about-me h2{
-    margin-bottom: 10px;
+.about-me h2 {
+    margin-bottom: 24px;
+    text-align: left;
+    color: #9c27b0;
+    /*text-decoration: underline;*/
+    font-family: 'Handlee', cursive;
+}
+
+.experience{
+    min-height: 100vh;
+    background-color: #9c27b0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.box-area{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.box-date{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    order: 2;
+    text-align: center;
+    font-size: 24px;
+    flex-basis: 100px;
+    background: linear-gradient(to right, #9c27b0 45%, #9c27b0 45%, #212121 45%, #9c27b0 47%);
+}
+.box-date > span{
+    font-size: 20px;
+    padding: 10px;
+    margin: auto;
+    background: #212121;
+    border-radius: 4px;
+}
+
+.box-text{
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: #212121;
+    order: 3;
+    width: 80%;
+    background: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: max-content;
+}
+
+@media(min-width: 640px){
+    .box-text,
+    .custom{
+        width: 40%;
+    }
+    .box-right .box-text{
+        order: 1;
+        padding-right: 10px;
+        border-radius: 10px;
+    }
+    .box-right .custom{
+        order: 3;
+    }
+}
+
+.experience h2{
+    color: #9c27b0;
+    margin-bottom: 8px;
+    text-align: left;
+    font-family: 'Handlee', cursive;
+}
+.cargo{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 8px;
+}
+.descricao{
+    text-align: left;
+}
+.stacks{
+    text-align: left;
+    margin-top: 1em;
+}
+.stack-color{
+    color: #9c27b0;
+}
+.contact .grid {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    height:10vh;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contact .grid a{
+    display: grid;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.contact i {
+    font-size: 3em;
+    justify-self: center;
+
+}
+.contact i:hover{
+    color: #9c27b0;
+
 }

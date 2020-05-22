@@ -12,20 +12,21 @@
 <body>
 <header>
     <nav class="menu">
-        <ul>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Contact</a></li>
+        <ul class="menu-container nav">
+            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <div class="container">
+    <div class="container menu-container" id="aboutme">
         <div class="profile-pic">
             <img class="profile" src="./img/me.jpeg" alt="Juliana Gonçalves">
             <h1 class="site-title">Juliana Gonçalves</h1>
             <h2 class="site-subtitle">Frontend developer</h2>
         </div>
         <div class="line"></div>
-        <div class="about-me">
+        <div class="about-me menu-container">
             <h2>About me</h2>
             <p>
                 Master degree student in Computer Science at the Federal University of Uberlândia(UFU) in the area of
@@ -42,10 +43,10 @@
     </div>
 </header>
 
-<section>
-    <div class="experience">
+<section id="experience">
+    <div class="experience " >
 
-        <div class="box-area">
+        <div class="box-area menu-container">
             <div class="custom"></div>
             <div class="box-date">
                 <span>2020</span>
@@ -65,7 +66,7 @@
             </div>
         </div>
 
-        <div class="box-area box-right">
+        <div class="box-area box-right menu-container">
             <div class="custom"></div>
             <div class="box-date">
                 <span>2019</span>
@@ -89,7 +90,7 @@
             </div>
         </div>
 
-        <div class="box-area">
+        <div class="box-area menu-container">
             <div class="custom"></div>
             <div class="box-date">
                 <span>2017</span>
@@ -110,7 +111,7 @@
             </div>
         </div>
 
-        <div class="box-area box-right">
+        <div class="box-area box-right menu-container">
             <div class="custom"></div>
             <div class="box-date">
                 <span>2017</span>
@@ -124,7 +125,7 @@
             </div>
         </div>
 
-        <div class="box-area">
+        <div class="box-area menu-container">
             <div class="custom"></div>
             <div class="box-date">
                 <span>2016</span>
@@ -138,36 +139,52 @@
             </div>
         </div>
 
-
-
     </div>
 </section>
-<section>
+<section id="education">
+    <div class="education menu-container">
+        <div class="card">
+            <h2 class="university-sigla">UFU</h2>
+            <p class="university-title">Federal University of Uberlândia</p>
+            <p class="course-date">2019-2021</p>
+            <p class="course">Master in Computer Science, Artificial Intelligence</p>
+        </div>
+        <div class="card">
+            <h2 class="university-sigla">IFTM - Uberlândia</h2>
+            <p class="university-title">Federal Institute of Triângulo Mineiro</p>
+            <p class="course-date">2019-2020</p>
+            <p class="course">Post-Graduation in Analysis and Development of Systems Applied to Business Management</p>
+        </div>
+        <div class="card">
+            <h2 class="university-sigla">IFTM - Patrocínio</h2>
+            <p class="university-title">Federal Institute of Triângulo Mineiro </p>
+            <p class="course-date">2019-2020</p>
+            <p class="course">Graduation in Analysis and Systems Development</p>
+        </div>
+    </div>
+</section>
+<section id="contact">
     <div class="contact">
-
         <div class="grid">
-            <a href="https://github.com/JulianaCristina">
+            <a target="_blank" href="https://github.com/JulianaCristina">
                 <i class="fab fa-github"></i>
 
             </a>
-            <a href="https://www.linkedin.com/in/juliana-goncalves8/">
+            <a target="_blank" href="https://www.linkedin.com/in/juliana-goncalves8/">
                 <i class="fab fa-linkedin-in"></i>
 
             </a>
-            <a href="https://api.whatsapp.com/send?phone=553499520053&text=Olá!">
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=553499520053&text=Olá!">
                 <i class="fab fa-whatsapp"></i>
 
             </a>
-            <a href="mailto:julianacristina780@gmail.com">
+            <a target="_blank" href="mailto:julianacristina780@gmail.com">
                 <i class="far fa-envelope"></i>
-
             </a>
         </div>
     </div>
 </section>
-<!--<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a-->
-<!--        href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
-<!--<div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from-->
-<!--    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="./js/scroll.js"></script>
 </body>
 </html>

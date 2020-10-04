@@ -340,4 +340,10 @@ section .contact{
     color: #9c27b0;
 
 }
-
+.projects {
+    padding: 16px;
+    list-style: circle;
+}
+.projects a{
+    color: #9c27b0;
+}
